@@ -1,9 +1,9 @@
 #include "DHT.h" 
 #define DHTPIN 12
-DHT dht_object(DHTPIN, DHT11); //Create an Object of class DHT with Pin Number and Type of Sensor (DHT11 or DHT22) as attributes
+DHT dht_object(DHTPIN, DHT11);
 void setup() {
   Serial.begin(9600);
-  dht_object.begin();  //sensor is initialising
+  dht_object.begin();  
 }
 void loop() { 
   delay(2000);
